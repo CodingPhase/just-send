@@ -2,7 +2,7 @@
 
 namespace CodingPhase\JustSend;
 
-use Skylen\JustSend\Exceptions\CouldNotSendNotification;
+use CodingPhase\JustSend\Exceptions\CouldNotSendNotification;
 use Illuminate\Notifications\Notification;
 
 class JustSendChannel
