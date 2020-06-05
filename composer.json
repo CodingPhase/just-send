@@ -1,0 +1,46 @@
+{
+  "name": "CodingPhase/justSend",
+  "description": "JustSend Notifications channel for Laravel 6+",
+  "homepage": "https://github.com/laravel-notification-channels",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krystian Pacholski",
+      "email": "kpacholski2001@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/notifications": "~5.5 || ~6.0 || ~7.0",
+    "illuminate/support": "~5.8 || ~6.0 || ~7.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.5",
+    "phpunit/phpunit": "~5.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodingPhase\\JustSend\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodingPhase\\JustSend\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CodingPhase\\JustSend\\JustSendServiceProvider"
+      ]
+    }
+  }
+}
